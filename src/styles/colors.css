@@ -1,0 +1,29 @@
+
+:root {
+  --art-primary: #1a1a1a;
+  --art-secondary: #2a2a2a;
+  --art-accent: #6366f1;
+  --art-accent-dark: #4f46e5;
+  --art-accent-light: #818cf8;
+  --art-light: #fafafa;
+  --art-gray: #6b7280;
+  --art-gray-light: #f3f4f6;
+}
+
+.bg-art-primary { background-color: var(--art-primary); }
+.bg-art-secondary { background-color: var(--art-secondary); }
+.bg-art-accent { background-color: var(--art-accent); }
+.bg-art-light { background-color: var(--art-light); }
+.bg-art-gray-light { background-color: var(--art-gray-light); }
+
+.text-art-primary { color: var(--art-primary); }
+.text-art-accent { color: var(--art-accent); }
+.text-art-gray { color: var(--art-gray); }
+
+.hover\:bg-art-accent-dark:hover { background-color: var(--art-accent-dark); }
+.hover\:text-art-accent:hover { color: var(--art-accent); }
+.dark\:hover\:text-art-accent-light:hover { color: var(--art-accent-light); }
+
+.dark .dark\:bg-art-primary { background-color: var(--art-primary); }
+.dark .dark\:bg-art-secondary { background-color: var(--art-secondary); }
+.dark .dark\:text-white { color: white; }
