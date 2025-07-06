@@ -20,7 +20,8 @@ import {
   Instagram,
   Twitter,
   Globe,
-  ChevronLeft
+  ChevronLeft,
+  Eye
 } from 'lucide-react';
 import { Artist, Artwork } from '@/types';
 

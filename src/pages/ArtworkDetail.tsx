@@ -17,10 +17,10 @@ import {
   Info,
   ChevronLeft,
   ChevronRight,
-  ZoomIn
+  ZoomIn,
+  X
 } from 'lucide-react';
 import { Artwork } from '@/types';
-import { trendingArtworks } from './Index';
 
 // Mock artwork data (would come from an API in a real app)
 const artworkData: Artwork = {
@@ -39,6 +39,7 @@ const artworkData: Artwork = {
     artworks: [],
     specialties: ['Abstract', 'Mixed Media', 'Large Scale'],
     location: 'New York, NY',
+    createdAt: new Date('2021-05-12')
   },
   description: 'This piece explores the interconnected nature of human thought and emotion through vibrant color and organic forms. The layered acrylic paint creates depth and movement, inviting the viewer to discover new details with each viewing. The composition balances chaos and order, reflecting the complex nature of human consciousness.\n\nInspired by both natural structures like neural networks and emotional states, this work aims to create a visual representation of how our thoughts form patterns and influence our perception of the world around us.',
   price: 2800,
@@ -69,12 +70,13 @@ const similarArtworks = [
       username: 'sophia_art',
       email: 'sophia@example.com',
       name: 'Sophia Chen',
-      role: 'artist',
+      role: 'artist' as const,
       profileImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop',
       bio: 'Contemporary artist specializing in abstract expressionism.',
       followers: 3456,
       rating: 4.9,
       artworks: [],
+      createdAt: new Date('2021-05-12')
     },
     description: 'An exploration of form and color through geometric abstraction.',
     price: 1800,
@@ -97,11 +99,12 @@ const similarArtworks = [
       username: 'emma_paintings',
       email: 'emma@example.com',
       name: 'Emma Wilson',
-      role: 'artist',
+      role: 'artist' as const,
       bio: 'Traditional landscape painter inspired by nature.',
       followers: 1902,
       rating: 4.8,
       artworks: [],
+      createdAt: new Date('2019-08-05')
     },
     description: 'A peaceful mountain landscape captured in traditional oil painting techniques.',
     price: 1200,
@@ -124,11 +127,12 @@ const similarArtworks = [
       username: 'sophia_art',
       email: 'sophia@example.com',
       name: 'Sophia Chen',
-      role: 'artist',
+      role: 'artist' as const,
       bio: 'Contemporary artist specializing in abstract expressionism.',
       followers: 3456,
       rating: 4.9,
       artworks: [],
+      createdAt: new Date('2021-05-12')
     },
     description: 'A study of light and shadow in abstract forms.',
     price: 2200,

@@ -30,7 +30,8 @@ const featuredArtwork: Artwork = {
     artworks: [],
     social: {
       instagram: '@sophia_art',
-    }
+    },
+    createdAt: new Date('2021-05-12')
   },
   description: 'This piece explores the interconnected nature of human thought and emotion through vibrant color and organic forms. The layered acrylic paint creates depth and movement, inviting the viewer to discover new details with each viewing.',
   price: 2800,
@@ -66,6 +67,7 @@ const trendingArtworks: Artwork[] = [
       followers: 2178,
       rating: 4.7,
       artworks: [],
+      createdAt: new Date('2020-11-23')
     },
     description: 'A photographic study of urban architecture and reflections in modern glass buildings.',
     price: 750,
@@ -93,6 +95,7 @@ const trendingArtworks: Artwork[] = [
       followers: 1902,
       rating: 4.8,
       artworks: [],
+      createdAt: new Date('2019-08-05')
     },
     description: 'A peaceful mountain landscape captured in traditional oil painting techniques.',
     price: 1200,
@@ -120,6 +123,7 @@ const trendingArtworks: Artwork[] = [
       followers: 3289,
       rating: 4.9,
       artworks: [],
+      createdAt: new Date('2022-03-10')
     },
     description: 'A surreal digital artwork exploring themes of technology and human consciousness.',
     price: 500,
@@ -147,6 +151,7 @@ const trendingArtworks: Artwork[] = [
       followers: 3456,
       rating: 4.9,
       artworks: [],
+      createdAt: new Date('2021-05-12')
     },
     description: 'An exploration of form and color through geometric abstraction.',
     price: 1800,
@@ -174,6 +179,7 @@ const trendingArtworks: Artwork[] = [
       followers: 1245,
       rating: 4.6,
       artworks: [],
+      createdAt: new Date('2020-07-15')
     },
     description: 'A modern sculpture exploring organic forms in marble.',
     price: 3500,

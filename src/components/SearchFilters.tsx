@@ -36,12 +36,12 @@ const categories = [
 ];
 
 const sortOptions = [
-  { id: 'date-desc', name: 'Newest', value: { sortBy: 'date', sortOrder: 'desc' } },
-  { id: 'date-asc', name: 'Oldest', value: { sortBy: 'date', sortOrder: 'asc' } },
-  { id: 'price-asc', name: 'Price: Low to High', value: { sortBy: 'price', sortOrder: 'asc' } },
-  { id: 'price-desc', name: 'Price: High to Low', value: { sortBy: 'price', sortOrder: 'desc' } },
-  { id: 'popularity-desc', name: 'Most Popular', value: { sortBy: 'popularity', sortOrder: 'desc' } },
-  { id: 'rating-desc', name: 'Highest Rated', value: { sortBy: 'rating', sortOrder: 'desc' } },
+  { id: 'date-desc', name: 'Newest', value: { sortBy: 'date' as const, sortOrder: 'desc' as const } },
+  { id: 'date-asc', name: 'Oldest', value: { sortBy: 'date' as const, sortOrder: 'asc' as const } },
+  { id: 'price-asc', name: 'Price: Low to High', value: { sortBy: 'price' as const, sortOrder: 'asc' as const } },
+  { id: 'price-desc', name: 'Price: High to Low', value: { sortBy: 'price' as const, sortOrder: 'desc' as const } },
+  { id: 'popularity-desc', name: 'Most Popular', value: { sortBy: 'popularity' as const, sortOrder: 'desc' as const } },
+  { id: 'rating-desc', name: 'Highest Rated', value: { sortBy: 'rating' as const, sortOrder: 'desc' as const } },
 ];
 
 const SearchFilters = ({ onFilterChange, className }: SearchFiltersProps) => {
